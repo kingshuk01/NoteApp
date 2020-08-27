@@ -16,11 +16,14 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.grey[900],
         title: Text("Notes",style: TextStyle(
           color: Colors.white,
-          fontSize: 24
+          fontSize: 20
 
         ),),
         actions: <Widget>[
-          Icon(Icons.search,size: 40,color: Colors.white,)
+          Padding(
+            padding: const EdgeInsets.only(right : 15),
+            child: Icon(Icons.search,color: Colors.white,),
+          )
         ],
         elevation: 0,
       ),
